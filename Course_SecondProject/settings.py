@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'onetoone.apps.OnetooneConfig',
     'onetomany.apps.OnetomanyConfig',
     'manytomany.apps.ManytomanyConfig',
+    'orm_method.apps.OrmMethodConfig',
     
 
 ]
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'Course_SecondProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
